@@ -25,114 +25,190 @@ footer a {
     color: hsl(228, 45%, 44%);
 }
 
+.btn {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
 
-@media (max-width: 576px) {
+.btn:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+}
+
+.circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    padding: 0px;
+}
+
+.container {
+    padding: 30px;
+}
+
+.great {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.greyText {
+    color: hsla(224, 30%, 27%, 0.5)
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.of100 {
+    color: hsl(241, 100%, 89%);
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+
+
+.otherText {
+    color: hsl(241, 100%, 89%);
+    font-weight: bold;
+}
+
+.purpleText {
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+
+.row {
+    background-color: hsl(241, 100%, 89%);
+    margin: 20px 0;
+    height: 55px;
+    border-radius: 10px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.scoreCol {
+    text-align: right;
+}
+
+.smallText {
+    color: hsl(241, 100%, 89%);
+    font-size: 15px;
+}
+
+.testName {
+    align-self: left;
+}
+
+.testScore {
+    align-self: right;
+
+}
+
+.topDiv {
+    text-align: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 355px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding: 25px 50px;
+}
+
+.totalScore {
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+#reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+#verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+#visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+
+
+
+@media (min-width: 580px) {
+    body{
+        background-color: aliceblue;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 15px;
+        border: 0;
+    }
+
     .circle {
-        background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 35px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 100px auto;
+        width: 740px;
+        height: 510px;
+        box-shadow: 7px 7px 7px rgb(201, 198, 198);
+        border-radius: 25px;
         overflow: hidden;
-        width: 140px;
-        height: 140px;
-        margin: 20px auto;
-        padding: 0px;
+        grid-gap: 0
     }
 
-    .container {
-        padding: 20px;
+    .grid-item {
+        /* padding: 10px; */
+        padding-top: 40px;
+        background-color: white;
     }
-
-    .great {
-        color: white;
-        font-weight: bold;
-        font-size: 25px;
-    }
-
-    .greyText {
-        color: hsla(224, 30%, 27%, 0.5)
-    }
-
-    .of100 {
-        color: hsl(241, 100%, 89%);
-        font-size: 15px;
-        margin-top: -10px;
-    }
-
-
 
     .otherText {
-        color: hsl(241, 100%, 89%);
-        font-weight: bold;
-    }
-
-    .purpleText {
-        color: hsl(224, 30%, 27%);
-        font-weight: bold;
-    }
-
-    .row {
-        background-color: hsl(241, 100%, 89%);
-        margin: 10px 0;
-        height: 55px;
-        border-radius: 10px;
-        align-items: center;
-        font-weight: bold;
-        font-size: 16px;
-    }
-
-    .scoreCol {
-        text-align: right;
+        margin-bottom: 40px;
     }
 
     .smallText {
-        color: hsl(241, 100%, 89%);
-        font-size: 15px;
-    }
-
-    .testName {
-        align-self: left;
-    }
-
-    .testScore {
-        align-self: right;
-
+        font-size: 17px;
     }
 
     .topDiv {
-        text-align: center;
-        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-        height: 355px;
-        border-bottom-left-radius: 10%;
-        border-bottom-right-radius: 10%;
-        padding: 25px 50px;
+        /* border-top-left-radius: 10%;
+        border-top-right-radius: 10%; */
+        padding: 40px 70px 0;
+        border-radius: 0;
+        height: auto;
+        /* padding: 25px 75px; */
     }
 
     .totalScore {
-        color: white;
-        font-weight: bolder;
-        font-size: 60px;
-        margin-bottom: 0;
-        margin-top: 20px;
+        margin-top: 45px;
     }
-
-    #memory {
-        color: hsl(39, 100%, 56%);
-        background-color: hsla(39, 100%, 56%, 0.05);
-    }
-
-    #reaction {
-        color: hsl(0, 100%, 67%);
-        background-color: hsla(0, 100%, 67%, 0.05);
-    }
-
-    #verbal {
-        color: hsl(166, 100%, 37%);
-        background-color: hsla(166, 100%, 37%, 0.05);
-    }
-
-    #visual {
-        color: hsl(234, 85%, 45%);
-        background-color: hsla(234, 85%, 45%, 0.05);
-    }
-
 
 }
